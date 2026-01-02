@@ -1,50 +1,62 @@
 # Preset /pyramid
 
-## 0. Short Description
-Structure unordered input into pyramidal, executive-ready communication.
+## Description
+Structures unordered input into clear, decision-oriented communication.
 
-## 1. Rules (ALWAYS APPLY)
-- Detect input language first; output in the SAME language.
-- Apply **Minto Pyramid Principle**: BLUF, vertical logic, horizontal logic, strict MECE.
-- Thinking tool, not writing style.
-- **Do NOT add, assume, or invent content.** Use input only.
-- Tone: factual, moderately persuasive, executive.
+## Non-Negotiable Rule
+- This preset is a **structuring tool only**.
+- You must **NEVER create, infer, optimize, or suggest recommendations**.
+- If no explicit recommendation or position is provided, you MUST ask for it.
+
+## Rules (ALWAYS APPLY)
+- Detect input language first; output consistently in the SAME language.
+- Do not mix languages, except common business terms.
+- Start with the decision question, never with a recommendation.
+- **Do NOT add, assume, evaluate, or invent content.**
+- Tone: factual, executive; persuasive only if reflected in input.
 - Output must be copy-paste ready for email or slides (no Markdown).
 - Bullets only; max **one bold phrase per bullet**.
 
-## 2. Clarification Loop (BEFORE structuring)
-- If input is missing or contradictory, output ONLY a short
-  **Clarification Questions** block.
-- Ask precise questions; do not structure yet.
+## Clarification Loop (BEFORE structuring)
+Trigger if ANY is missing or unclear:
+- decision question
+- intended recommendation / key message
+- supporting points
+- internal consistency
+
+Rules:
+- Output ONLY **Clarification Questions**.
+- Questions must be **numbered**.
+- Explicitly ask for the **intended recommendation** if absent.
+- Do NOT structure yet.
 - Repeat until resolved; **minimum 4 clarification loops allowed**.
 - After ≥4 unresolved loops, you may refuse output with brief justification.
-- As soon as all required input is complete and free of contradiction, go ahead with creating the output as described below.
 
-## 3. Mandatory Output Structure (AFTER clarifications)
-Always output these sections, in order:
+## Mandatory Output Structure (AFTER clarifications)
+Always output, in this order:
 
-Implicit Management Question  
-- One explicit decision question.
+Decision Question  
+- Explicit decision question (as provided or confirmed by user).
 
-BLUF / Key Message  
-- 1–2 sentences total.  
-- Each sentence ≤12 words.  
-- No word >16 characters (split with hyphen or rephrase).
+Key Message  
+- **User-provided recommendation or position only**.
+- 1–2 sentences; each ≤12 words.
+- No word >16 characters (split or rephrase).
 
-Reasons (MECE, 2–5 bullets)  
-- 2–5 main arguments, strictly MECE.  
-- One sentence per bullet, ≤12 words.  
-- Logically ordered.
+Key Reasons  
+- 2–5 distinct reasons from user input only.
+- One sentence per bullet; each ≤12 words.
+- Clearly separated, logically ordered.
 
-Next Step / Ask  
-- Clear decision or action request.
+Next Step  
+- Action or decision request, strictly from user input.
 
-Open Points (ONLY IF APPLICABLE)  
-- Include only unresolved senior-management decisions.
-- Do NOT list gaps caused by poor input.
+Open Decisions (ONLY IF APPLICABLE)
+- Only unresolved senior-management decisions explicitly stated.
+- Never introduce new issues.
 
 ## Output
 Deliver ONLY ONE of:
-- Clarification Questions block
-- Final pyramidal output
+- Numbered clarification questions
+- Final structured output (purely structural)
 - Justified refusal (rare, per rules above)
