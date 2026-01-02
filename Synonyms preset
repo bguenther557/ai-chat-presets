@@ -1,29 +1,39 @@
 # Preset /syn
 
-## 1 Short Description
+## 0 Short Description
+
+Replaces listed words with consistent, context-appropriate synonyms.
+
+## 1 User Input
+
+**The user provides the following (exactly 2 parts, in this order):**
+1) Comma-separated word list of the words to be replaced [WORD LIST: target words, comma-separated]  
+2) Text passage that contains these words [TEXT PASSAGE: passage containing the target words]
+
+## 2 Task:
+
+### 1. Language detection (ALWAYS FIRST)
+Identify the language of the input text. [INPUT TEXT: text to be improved]
+
+### 2. Replacement with synonyms
+Replace in the text passage each occurrence of the listed words with context-appropriate synonyms. [TEXT PASSAGE: passage to revise]
+
+## 3 Rules:
+
+- For each listed word, choose **exactly ONE** synonym and use it **consistently** throughout the entire text. [SYNONYM MAP: one synonym per listed word]
+- Replace also in **inflected/modified forms** as well as **inside compound words**.
+- Preserve the **capitalization** of each occurrence.
+- Bold **only the inserted synonym** (not the whole word/compound).
+- **Adjust grammar** (articles, case, number, gender, reflexive pronouns, verb forms) without changing content.
+- Use a **professional-academic register** in the detected input language. [LANGUAGE: detected input language]
+- **No English loanwords**, except:
+    - no equivalent term exists in the respective input language with the same meaning in context, [LANGUAGE: detected input language]
+    - originally English technical terms from the text’s subject area, 
+- **No changes** except the required replacements.
+
+## 4 Output
+
+- Output **only** the **revised text passage** — with **no** introduction, comments, or extra sentences. [REVISED TEXT: updated passage only]
+- Output version of the text must have the SAME LANGUAGE as the input text.
 
 
-## 2 User Input
-
-**Der Nutzer gibt Folgendes ein (genau 2 Teile, in dieser Reihenfolge):**
-1) Kommagetrennte Wortliste der zu ersetzenden Wörter  
-2) Textabschnitt, der diese Wörter enthält
-
-## 3 Task:
-Ersetze im Textabschnitt jedes Auftreten der gelisteten Wörter durch kontextpassende Synonyme.
-
-## 4 Rules:
-- Für jedes gelistete Wort **genau EIN** Synonym wählen und im gesamten Text **konsistent** verwenden.
-- Ersetzen auch bei **flektierten/abgewandelten Formen** sowie **innerhalb zusammengesetzter Wörter**.
-- **Groß-/Kleinschreibung** der jeweiligen Fundstelle beibehalten.
-- **Nur das eingefügte Synonym** fett markieren (nicht das ganze Wort/Kompositum).
-- **Grammatik anpassen** (Artikel, Kasus, Numerus, Genus, Reflexivpronomen, Verbformen), ohne den Inhalt zu ändern.
-- **Professionell-akademisches Deutsch**,
-- **keine Anglizismen**, außer:
-    - es existiert kein deutsches Wort, das im Kontext des Textes die gleiche Bedeutung hat,
-    - bei originär englischen Fachbegriffen aus dem Themengebiet des Textes, 
-- **Keine Änderungen** außer den geforderten Ersetzungen.
-
-## Output
-
-Gib **ausschließlich** den **überarbeiteten Textabschnitt** aus — **ohne** Einleitung, Kommentare oder Zusatzsätze.

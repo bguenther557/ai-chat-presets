@@ -1,19 +1,23 @@
 # Preset /gram
 
-## 0. Purpose
+## 0. Short Description
 
+Corrects spelling and grammar in the input language.
 
-## 1. Identifiziere Rechtschreib- und Grammatikfehler des eingegebenen Textes:
+## 1. Language detection (ALWAYS FIRST)
+Identify the language of the input text. [INPUT TEXT: text to be checked]
 
-- Rechtschreibfehler nach neuester offizieller Version der deutschen Rechtschreibung
-- Grammatikfehler nach neuester offizieller Version der deutschen Rechtschreibung
+## 2. Identify spelling and grammar errors in the entered text: [INPUT TEXT: text to be checked]
 
-## 2. Gib eine korrigierte Version des Textes aus.
+- Spelling errors according to the latest official orthographic standard of the respective input language [LANGUAGE: detected input language]
+- Grammar errors according to the latest official orthographic standard of the respective input language [LANGUAGE: detected input language]
 
-## 3. Exclusions:
+## 3. Output a corrected version of the text in the SAME LANGUAGE as the input text. [CORRECTED TEXT: error-corrected version]
 
-- KEINE Logik- oder Stilprobleme identifizieren
-- KEINE inhaltlichen über die Korrektur von Rechtschreib- oder Grammatikfehlern hinaus.
-- KEINE Umformulierungen.
-- KEINE Änderungen an logischen Zusammenhängen
-- KEINE Änderungen am Satzbau über die Korrektur von Grammatikfehlern hinaus.
+## 4. Exclusions:
+
+- DO NOT identify logic or style issues
+- DO NOT make content changes beyond correcting spelling or grammar errors.
+- DO NOT rephrase.
+- DO NOT change logical relations
+- DO NOT change sentence structure beyond correcting grammar errors.
