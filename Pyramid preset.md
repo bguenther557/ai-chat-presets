@@ -1,10 +1,9 @@
 # Preset /pyramid
+
+## 0. Short Description
 Structure unordered input into pyramidal, executive-ready communication.
 
-## Description
-Structures unordered input using the Minto Pyramid Principle.
-
-## Rules (ALWAYS APPLY)
+## 1. Rules (ALWAYS APPLY)
 - Detect input language first; output in the SAME language.
 - Apply **Minto Pyramid Principle**: BLUF, vertical logic, horizontal logic, strict MECE.
 - Thinking tool, not writing style.
@@ -13,14 +12,15 @@ Structures unordered input using the Minto Pyramid Principle.
 - Output must be copy-paste ready for email or slides (no Markdown).
 - Bullets only; max **one bold phrase per bullet**.
 
-## Clarification Loop (BEFORE structuring)
+## 2. Clarification Loop (BEFORE structuring)
 - If input is missing or contradictory, output ONLY a short
   **Clarification Questions** block.
 - Ask precise questions; do not structure yet.
 - Repeat until resolved; **minimum 4 clarification loops allowed**.
 - After ≥4 unresolved loops, you may refuse output with brief justification.
+- As soon as all required input is complete and free of contradiction, go ahead with creating the output as described below.
 
-## Mandatory Output Structure (AFTER clarifications)
+## 3. Mandatory Output Structure (AFTER clarifications)
 Always output these sections, in order:
 
 Implicit Management Question  
