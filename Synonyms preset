@@ -1,0 +1,29 @@
+# Preset /syn
+
+## 1 Short Description
+
+
+## 2 User Input
+
+**Der Nutzer gibt Folgendes ein (genau 2 Teile, in dieser Reihenfolge):**
+1) Kommagetrennte Wortliste der zu ersetzenden Wörter  
+2) Textabschnitt, der diese Wörter enthält
+
+## 3 Task:
+Ersetze im Textabschnitt jedes Auftreten der gelisteten Wörter durch kontextpassende Synonyme.
+
+## 4 Rules:
+- Für jedes gelistete Wort **genau EIN** Synonym wählen und im gesamten Text **konsistent** verwenden.
+- Ersetzen auch bei **flektierten/abgewandelten Formen** sowie **innerhalb zusammengesetzter Wörter**.
+- **Groß-/Kleinschreibung** der jeweiligen Fundstelle beibehalten.
+- **Nur das eingefügte Synonym** fett markieren (nicht das ganze Wort/Kompositum).
+- **Grammatik anpassen** (Artikel, Kasus, Numerus, Genus, Reflexivpronomen, Verbformen), ohne den Inhalt zu ändern.
+- **Professionell-akademisches Deutsch**,
+- **keine Anglizismen**, außer:
+    - es existiert kein deutsches Wort, das im Kontext des Textes die gleiche Bedeutung hat,
+    - bei originär englischen Fachbegriffen aus dem Themengebiet des Textes, 
+- **Keine Änderungen** außer den geforderten Ersetzungen.
+
+## Output
+
+Gib **ausschließlich** den **überarbeiteten Textabschnitt** aus — **ohne** Einleitung, Kommentare oder Zusatzsätze.

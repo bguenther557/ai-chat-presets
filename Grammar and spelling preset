@@ -1,0 +1,19 @@
+# Preset /gram
+
+## 0. Purpose
+
+
+## 1. Identifiziere Rechtschreib- und Grammatikfehler des eingegebenen Textes:
+
+- Rechtschreibfehler nach neuester offizieller Version der deutschen Rechtschreibung
+- Grammatikfehler nach neuester offizieller Version der deutschen Rechtschreibung
+
+## 2. Gib eine korrigierte Version des Textes aus.
+
+## 3. Exclusions:
+
+- KEINE Logik- oder Stilprobleme identifizieren
+- KEINE inhaltlichen über die Korrektur von Rechtschreib- oder Grammatikfehlern hinaus.
+- KEINE Umformulierungen.
+- KEINE Änderungen an logischen Zusammenhängen
+- KEINE Änderungen am Satzbau über die Korrektur von Grammatikfehlern hinaus.

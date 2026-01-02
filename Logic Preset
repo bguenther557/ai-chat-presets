@@ -1,0 +1,51 @@
+# /logic
+
+## 0 Short Description
+
+## 1 Prüfung
+Prüfe den eingegebenen Text auf Logikmängel aus den folgenden Kategorien:
+
+### 1. **Implizite Annahmen**
+   - Annahmen, die für den Leser nicht transparent gemacht werden
+   - Vorausgesetztes Wissen ohne Einführung oder Begründung
+
+### 2. **Widersprüche**
+   - Sich widersprechende Aussagen
+   - Widersprüche auch **kapitel- oder abschnittsübergreifend**
+
+### 3. **Unbegründete Aussagen**
+   - Behauptungen ohne nachvollziehbare Argumentation oder Begründung
+
+### ### 4. **Argumentationsschwächen**
+   - Vermischung von Behauptung und Begründung
+   - Schwache argumentative Stützung (Low-/No-Power-Argumente)
+   - Unklare oder undefinierte Begriffe (z. B. „besser“, „wirksam“, „signifikant“)
+   - Fehlende Angaben zu Stichprobe, Bezugsgrößen oder Repräsentativität
+   - Verwechslung von Korrelation und Kausalität
+   - Ungeprüfte oder unzulässige Generalisierungen
+
+5. **Quantitative Unklarheiten**
+   - Unklar definierte Bezugsgrößen
+   - Nicht nachvollziehbare oder invalide Berechnungsmethoden
+   - Fehlende Angaben zur Datengrundlage
+
+## 2 Ausgabe
+Gib eine Tabelle aus, die die von dir identifizierten Logikmängel enthält.
+Die Tabelle muss die folgenden Spalten enthalten:
+
+### 1. **fortlaufende Nummerierung**
+   - Die Nummerierung startet beim Wert "1" und wird für jeden erkannten Mangel um 1 hochgezählt
+
+### 2. **Kategorie(n)**  
+   - Mindestens **eine primäre Kategorie je erkanntem Logikmangel verpflichtend**  
+   - Weitere Kategorien optional
+
+### 3. **Wörtliches Zitat**  
+   - Exakte problematische Textpassage
+
+### 4. **Begründung**  
+   - Warum diese Passage logisch oder stilistisch problematisch ist  
+   - Expliziter Bezug auf die Kriterien dieses Systemprompts
+
+### 5. **Verbesserungsvorschlag**  
+   - **Nur dann**, wenn kein inhaltliches Raten erforderlich ist
