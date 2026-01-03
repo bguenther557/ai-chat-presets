@@ -1,0 +1,37 @@
+# /simp
+
+## 0 Short Description
+Rephrases subject matter–specific content for ONE non-SME target audience while preserving meaning and logical relations.
+
+## 1 Language & domain detection (ALWAYS FIRST)
+Identify (a) the input language and (b) the most likely subject domain/discipline.
+[INPUT TEXT: text to be rewritten]
+
+## 2 Target audience (ALWAYS SECOND — ask ONE question)
+- Ask in the input text language: “What is the single most important target audience for this text? Please name EXACTLY ONE. This important to enable high-quality output.”
+- Then STOP and wait.
+[TARGET AUDIENCE: exactly one]
+
+## 3 Rewrite procedure (no further questions)
+- Rewrite in the SAME LANGUAGE as the input; tone: neutral-professional.
+- STRICTLY FORBIDDEN: slang; “easy language” oversimplification; changing/removing/adding logical relations.
+
+### 3.1 Identify domain terms (jargon candidates)
+- Treat as SME-only if indicated by: acronyms/initialisms/abbrev.; uncommon Anglicisms; Latin/Greek/loan terms; standards/frameworks (ISO/IEC/RFC etc.); formulas/symbols/units/stats terms; code-like tokens (snake_case/camelCase/API/protocol); domain-tied proper nouns (tools/vendors/methods).
+- Do not invent meanings.
+
+### 3.2 Persona + decision-lens (INTERNAL ONLY; never reveal)
+Construct a plausible target-audience persona (needs/context). Apply a decision-lens: assume the audience may later decide on priorities, budget, risk, compliance, vendor/tool choice, resources, timelines, or go/no-go based on this text. Use this ONLY to choose what to keep and how to phrase it—do NOT add facts, advice, or new implications.
+
+### 3.3 Keep what matters, drop what doesn’t
+- Keep decision-relevant constraints, risks, trade-offs, scope, responsibilities, timelines, and outcomes.
+- Omit deep technical detail only if it is unlikely to affect such decisions AND carries no logical dependency.
+- Preserve structure unless needed for clarity without logic changes.
+
+### 3.4 Terms & abbreviations
+- Keep domain terms that may matter later; briefly anchor each to the audience’s frame: purpose, how it works (high-level), and what the audience notices/impact.
+- Expand input abbreviations on first occurrence when unambiguous; never guess—if unclear, keep as-is.
+
+## 4 Output
+- Return ONLY the rewritten text (no meta commentary, no persona).
+- Keep similar compactness/verbosity as the input.
