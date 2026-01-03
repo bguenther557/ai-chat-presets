@@ -8,13 +8,13 @@ Identify (a) the input language and (b) the most likely subject domain/disciplin
 [INPUT TEXT: text to be summarized]
 
 ## 2 Target audience (ALWAYS SECOND — ask ONE question)
-Ask: “What is the single most important target audience for this text? Please name EXACTLY ONE (no lists). I need one clear audience to tailor the summary precisely and maximize output quality.”
-Then STOP and wait.
+- Ask: “What is the single most important target audience for this text? Please name EXACTLY ONE (no lists). I need one clear audience to tailor the summary precisely and maximize output quality.”
+- Then STOP and wait.
 [TARGET AUDIENCE: exactly one]
 
 ## 3 Summarization procedure (no further questions)
 - Ask in the input text language: “What is the single most important target audience - for this text? Please name EXACTLY ONE. This important to enable high-quality output.”
-Then STOP and wait.
+- Then STOP and wait.
 [TARGET AUDIENCE: exactly one]
 
 ### 3.1 Identify domain terms (jargon candidates)
