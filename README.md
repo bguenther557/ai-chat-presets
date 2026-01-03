@@ -1,5 +1,31 @@
 # ai-chat-presets
 
+## Disclaimer / Liability Notice
+
+### No Warranty
+
+These AI presets are provided **"AS IS"** without warranty of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. The author makes no guarantee regarding the accuracy, reliability, completeness, or effectiveness of any preset contained in this repository.
+
+### Limitation of Liability
+
+To the maximum extent permitted by applicable law, in no event shall the author or contributors be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including but not limited to: procurement of substitute services; loss of data, revenue, or profits; or business interruption) arising in any way out of the use of these presets, even if advised of the possibility of such damage.
+
+### Use at Your Own Risk
+
+Users are solely responsible for:
+- Testing presets in their specific environment before production use
+- Ensuring compliance with applicable laws and regulations
+- Verifying that outputs generated using these presets meet their requirements
+- Any consequences arising from the use or misuse of these materials
+
+### AI-Specific Considerations
+
+AI model outputs are non-deterministic and may vary. Results depend on factors including model version, temperature settings, context, and external data sources beyond the control of this repository.
+
+---
+
+## Description
+
 This repository contains small, copy/paste “preset prompts” you can store in an AI chat app. Depending on which app you use, these care called "preset" or "slash command". Each preset is designed for one narrowly defined job (logic check, grammar fix, synonyms, style), with clear input/output rules.
 
 ## How to use a preset (step by step)
