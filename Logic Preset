@@ -7,6 +7,7 @@ Detects logical issues; outputs findings in the input language.
 ## 1 Language detection (ALWAYS FIRST)
 Identify the language of the input text. [INPUT TEXT: text to be checked]
 
+
 ## 2 Review
 Review the input text for logical flaws from the following categories: [INPUT TEXT: text to be checked]
 
@@ -21,7 +22,7 @@ Review the input text for logical flaws from the following categories: [INPUT TE
 ### 3. **Unsubstantiated claims**
    - Assertions without a traceable argument or justification
 
-### ### 4. **Argumentation weaknesses**
+### 4. **Argumentation weaknesses**
    - Mixing claim and justification
    - Weak argumentative support (low-/no-power arguments)
    - Vague or undefined terms (e.g., “better,” “effective,” “significant”)
@@ -29,10 +30,25 @@ Review the input text for logical flaws from the following categories: [INPUT TE
    - Confusing correlation and causation
    - Unchecked or invalid generalizations
 
-5. **Quantitative ambiguities**
+### 5. **Quantitative ambiguities**
    - Unclear reference metrics
    - Non-traceable or invalid calculation methods
    - Missing information on the data basis
+
+### 6. **Cognitive errors When dealing With uncertainty**
+   - **Induction / “Never happened” ⇒ “Can’t happen”** — Claims that absence of past events proves impossibility or safety (“never,” “cannot,” “ruled out”).
+   - **Law of Small Numbers** — Strong conclusions from small samples, short time windows, or early trends without stating sample size, timeframe, or uncertainty.
+   - **Survivorship Bias / Silent Evidence** — Arguments based only on visible “winners” or reported cases while ignoring missing failures, non-reporting, or unseen counterexamples.
+   - **Narrative Fallacy** — Post-hoc stories presenting a clean causal chain without evidential support, alternatives, or acknowledgement of randomness.
+   - **Luck–Skill Confusion (Attribution Error)** — Performance explanations attributing outcomes mainly to skill/strategy without testing luck/noise as a plausible driver.
+   - **Ludic Fallacy (Game-like Risk Assumption)** — Treating real-world uncertainty as if probabilities/rules are known and stable (casino-like odds) when the process is unobservable or shifting.
+   - **Model Reification / “Map = Territory” (Platonicity)** — Treating model outputs (e.g., normality, VaR, backtests) as reality without stating assumptions, fit, and limits.
+   - **False Precision in Tail Probabilities** — Extremely precise likelihoods for rare events (e.g., “X-sigma,” “1 in billions”) without strong justification for distribution/model accuracy.
+   - **Base-Rate / Exposure Neglect** — Risk or causality claims ignoring denominators and exposure (who/what is at risk, for how long, under what conditions).
+   - **Stationarity Assumption** — Assuming the past reliably predicts the future without addressing regime change, non-stationarity, or structural breaks.
+   - **Thin-Tail Intuition in Fat-Tail Domains** — Reasoning dominated by averages/typical cases where extremes may dominate outcomes (concentration, scalability, network effects, tails).
+   - **Completeness Illusion (“We covered everything”)** — Claims of exhaustive coverage (“all risks,” “fully mitigated”) without acknowledging unknowns and residual uncertainty.
+
 
 ## 3 Output
 Output a table containing the logical flaws you identified, in the SAME LANGUAGE as the input text. [OUTPUT TABLE: findings table]
@@ -43,13 +59,20 @@ The table must include the following columns:
 
 ### 2. **Category(ies)**  
    - At least **one primary category per identified flaw is required**  
-   - Additional categories optional
+   - **One-row-per-passage:** If the same passage triggers multiple criteria, create **one** table row only and list **all applicable categories** in the “Category(ies)” column. Do **not** split the same passage into multiple rows.
+   - **Primary category tie-breaker:** If multiple categories apply, choose the **primary** category using this precedence (highest first), and treat the others as secondary:
+  1) **Contradictions**
+  2) **Quantitative ambiguities**
+  3) **Cognitive Errors When Dealing With Uncertainty**
+  4) **Argumentation weaknesses**
+  5) **Unsubstantiated claims**
+  6) **Implicit assumptions**
 
 ### 3. **Verbatim quote**  
    - Exact problematic text passage
 
 ### 4. **Rationale**  
-   - Why this passage is logically or stylistically problematic  
+   - Why this passage is logically problematic  
    - Explicit reference to the criteria of this system prompt
 
 ### 5. **Improvement suggestion**  
